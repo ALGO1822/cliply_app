@@ -212,14 +212,14 @@ return $default(_that.id,_that.content,_that.createdAt,_that.type,_that.isPinned
 
 
 class _Clip implements Clip {
-  const _Clip({required this.id, required this.content, required this.createdAt, required this.type, required this.isPinned, this.folderId, this.label});
+  const _Clip({required this.id, required this.content, required this.createdAt, required this.type, this.isPinned = false, this.folderId, this.label});
   
 
 @override final  String id;
 @override final  String content;
 @override final  DateTime createdAt;
 @override final  ClipType type;
-@override final  bool isPinned;
+@override@JsonKey() final  bool isPinned;
 @override final  String? folderId;
 @override final  String? label;
 

@@ -9,7 +9,7 @@ abstract class Clip with _$Clip {
   required String content,
   required DateTime createdAt,
   required ClipType type,
-  required bool isPinned,
+  @Default(false) bool isPinned,
   String? folderId,
   String? label,
  }) = _Clip;
