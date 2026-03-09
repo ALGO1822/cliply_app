@@ -6,3 +6,11 @@ class CacheException implements Exception {
   @override
   String toString() => 'CacheException: $message';
 }
+
+class ClipboardPermissionException implements Exception {
+  final String message;
+  ClipboardPermissionException([this.message = "Clipboard access denied"]);
+
+  @override
+  String toString() => "ClipboardPermissionException: $message";
+}
