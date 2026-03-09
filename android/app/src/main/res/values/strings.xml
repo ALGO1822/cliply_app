@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accessibility_description">Cliply needs this to monitor when you copy text so it can save it for you automatically.</string>
+</resources>
