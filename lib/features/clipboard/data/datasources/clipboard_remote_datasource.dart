@@ -20,6 +20,7 @@ class ClipboardRemoteDatasourceImpl implements ClipboardRemoteDatasource {
 
   void _initListener() {
     FlutterAccessibilityService.accessStream.listen((event) async {
+      print("System event detected: ${event.eventType}");
       try {
         final ClipboardData? data = await Clipboard.getData(
           Clipboard.kTextPlain,
