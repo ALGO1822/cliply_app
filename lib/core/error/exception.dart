@@ -14,3 +14,12 @@ class ClipboardPermissionException implements Exception {
   @override
   String toString() => "ClipboardPermissionException: $message";
 }
+
+class DefualtSettingException implements Exception {
+  final String message;
+  DefualtSettingException([this.message = "Cannot modify default setting"]);
+
+  @override
+  String toString() => "DefualtSettingException: $message";
+  
+}
